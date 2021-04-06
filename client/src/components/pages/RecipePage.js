@@ -4,7 +4,7 @@ import { Container, Spinner } from "react-bootstrap";
 import axios from "axios";
 import RecipeDisplay from "../display/RecipeDisplay.js";
 import ReviewDisplay from "../display/ReviewDisplay.js";
-import AddReviewButton from "../display/AddReviewButton.js";
+import AddReviewButton from "../buttons/AddReviewButton.js";
 
 const RecipePage = () => {
   const recipeID = useParams().recipeID;
@@ -83,14 +83,14 @@ const RecipePage = () => {
 
   return (
     <Container
-      className="d-flex justify-content-center"
+      className='d-flex justify-content-center'
       style={{ height: "90vh" }}
     >
       <div
-        className="text-center align-self-center"
+        className='text-center align-self-center'
         // style={{ margin: "20% 0" }}
       >
-        <Spinner animation="grow" />
+        <Spinner animation='grow' />
         <h1>Fetching Recipe...</h1>
       </div>
     </Container>
