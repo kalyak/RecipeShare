@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import ReactStars from "react-rating-stars-component";
 import axios from "axios";
 import { UserContext } from "../context/UserContext";
-import NoAccountPopUp from "./NoAccountPopUp";
+import NoAccountPopUp from "../display/NoAccountPopUp";
 
 // CHIlD COMPONENT
 const MyVerticallyCenteredModal = (props) => {
